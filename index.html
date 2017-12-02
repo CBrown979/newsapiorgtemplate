@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,16 +12,26 @@
 </head>
 <body>
     <div class="container">
-        <form id="source">
+        <form id="source" class="row text-center">
             <div class="form-group">
                 <select id="selection">
                     
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" id="getHeadlines" onclick="getDescription()" class="btn btn-primary">Submit</button>
         </form>
     </div>
     
+    <div class="container" id="quoteInfo">
+        <div class="row text-center">
+            <h1 class>Headline News</h1>
+            <div id="description" class= "well col-xs-12 message">
+                <ul id="headlines"></ul>
+                
+            </div>
+        </div>
+    </div>
+        
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="key.js"></script>
